@@ -22,6 +22,11 @@ You should run "Mouse_Click_Download_v4.cpp".
 
 | Options | Introduction |
 |:-------:|:----- |
-| a       | aaa   |
-| b       | bbb   |
+| f       | aaa   |
+| d       | bbb   |
 | c       | ccc   |
+| n       | ccc   |
+| a       | ccc   |
+| p       | ccc   |
+| o       | ccc   |
+| q       | ccc   |
