@@ -23,10 +23,12 @@ You should run "Mouse_Click_Download_v4.cpp".
 | Options | Introduction |
 |:-------:|:------------ |
 | f       | Show information to help you edit "CursorPositionData.txt". |
-| d       | bbb |
-| c       | ccc |
+| d       |  |
+| c       |  |
 | n       | If the status of "Numbering" is "Open", it will automatically type numbers in option "d". |
-| a       | ccc |
-| p       | ccc |
-| o       | ccc |
-| q       | ccc |
+
+| a       | If the status of "reating a File" is "Open", it will automatically create a file, "source.txt", in "Output Path". |
+
+| p       |  |
+| o       |  |
+| q       |  |
