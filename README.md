@@ -4,5 +4,4 @@ This is a Mouse_Click_Download.
 
 # Information
 
-+ See information about "Mouse_Click_Download_v4" in "Mouse_Click_Download_v4.md".  
-123
++ See information about "Mouse_Click_Download_v4" in "Mouse_Click_Download_v4.md".
