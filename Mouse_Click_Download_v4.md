@@ -21,12 +21,12 @@ You should run "Mouse_Click_Download_v4.cpp".
 ### \[Introduction of Options]
 
 | Options | Introduction |
-|:-------:|:----- |
-| f       | aaa   |
-| d       | bbb   |
-| c       | ccc   |
-| n       | ccc   |
-| a       | ccc   |
-| p       | ccc   |
-| o       | ccc   |
-| q       | ccc   |
+|:-------:|:------------ |
+| f       | Show information to help you edit "CursorPositionData.txt". |
+| d       | bbb |
+| c       | ccc |
+| n       | ccc |
+| a       | ccc |
+| p       | ccc |
+| o       | ccc |
+| q       | ccc |
