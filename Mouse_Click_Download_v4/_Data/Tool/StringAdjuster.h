@@ -17,8 +17,8 @@ public :
 	std::string ClearWhite( std::string str ) ;
 	std::string ClearHeadTailWhite( std::string str ) ;
 	
-	std::string CutHead( std::string str, int cutSize ) ;
-	std::string CutTail( std::string str, int cutSize ) ;
+	std::string CutHead( std::string str, unsigned int cutSize ) ;
+	std::string CutTail( std::string str, unsigned int cutSize ) ;
 	
 	std::vector<std::string> SplitTokens( std::string str ) ;
 	
@@ -82,7 +82,7 @@ std::string StringAdjuster::ClearHeadTailWhite( std::string str ) {
 	
 } // StringAdjuster::ClearHeadTailWhite()
 
-std::string StringAdjuster::CutHead( std::string str, int cutSize ) {
+std::string StringAdjuster::CutHead( std::string str, unsigned int cutSize ) {
 	
 	std::string retStr = "" ;
 	
@@ -94,7 +94,7 @@ std::string StringAdjuster::CutHead( std::string str, int cutSize ) {
 	
 } // StringAdjuster::CutHead()
 
-std::string StringAdjuster::CutTail( std::string str, int cutSize ) {
+std::string StringAdjuster::CutTail( std::string str, unsigned int cutSize ) {
 	
 	std::string retStr = "" ;
 	
@@ -134,7 +134,6 @@ std::vector<std::string> StringAdjuster::SplitTokens( std::string str ) {
 } // StringAdjuster::SplitTokens()
 	
 #endif // STRING_ADJUSTER_H
-
 
 
 
