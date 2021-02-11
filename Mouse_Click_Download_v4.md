@@ -28,5 +28,6 @@ You should run "Mouse_Click_Download_v4.cpp".
 | n       | If the status of "Numbering" is "Open", it will automatically type numbers in option "d". |
 | a       | If the status of "reating a File" is "Open", it will automatically create a file, "source.txt", in "Output Path". |
 | p       | Set a new path for "Cursor Position File Path". |
-| o       | Set a new path for "Output Path".\n123 |
+| o       | Set a new path for "Output Path".
+            apple. |
 | q       | Quit. |
