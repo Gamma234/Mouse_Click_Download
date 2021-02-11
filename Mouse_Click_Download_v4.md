@@ -14,4 +14,6 @@
   + CursorPositionData.txt
   + Mouse_Click_Download_v4.cpp
   
-      
+```
+pip install "test"
+```
