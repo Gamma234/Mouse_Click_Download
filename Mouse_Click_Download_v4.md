@@ -22,12 +22,11 @@ You should run "Mouse_Click_Download_v4.cpp".
 
 + The most important of this option, it will control your mouse at "download steps".
 + "Download steps" contains the following steps in a loop.
-
-  (1) a
-  (2) b
-  (3) c
-  (4) d
-  (5) e
+  1) a
+  2) b
+  3) c
+  4) d
+  5) e
 
 ### \[Introduction of Options]
 
