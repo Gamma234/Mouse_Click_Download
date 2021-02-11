@@ -26,13 +26,13 @@ You should run "Mouse_Click_Download_v4.cpp".
 
 ### \[Main Option : "d"]
 
-+ The most important of this option, it will control your mouse at "download steps".
-+ "Download steps" contains the following steps in a loop.
-  1. roll up
-  2. move mouse to a position and right click
-  3. move mouse to a position and left click
-  4. move mouse to a position and left click
-  5. move mouse to a position and left click
++ The most important of this option, it will ***control your mouse*** at "download steps".
++ "Download steps" contains the following steps in a loop.  
+  (1) roll up  
+  (2) move mouse to a position and right click  
+  (3) move mouse to a position and left click  
+  (4) move mouse to a position and left click  
+  (5) move mouse to a position and left click
 
 ----
 
