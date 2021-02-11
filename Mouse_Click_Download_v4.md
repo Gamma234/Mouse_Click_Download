@@ -25,7 +25,7 @@ You should run "Mouse_Click_Download_v4.cpp".
 | f       | Show information to help you edit "CursorPositionData.txt". |
 | d       | bbb |
 | c       | ccc |
-| n       | ccc |
+| n       | If the status of "Numbering" is "Open", it will automatically type numbers in option "d". |
 | a       | ccc |
 | p       | ccc |
 | o       | ccc |
