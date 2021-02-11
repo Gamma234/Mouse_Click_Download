@@ -17,8 +17,8 @@ public :
 	std::string ClearWhite( std::string str ) ;
 	std::string ClearHeadTailWhite( std::string str ) ;
 	
-	std::string CutHead( std::string str, unsigned int cutSize ) ;
-	std::string CutTail( std::string str, unsigned int cutSize ) ;
+	std::string CutHead( std::string str, size_t cutSize ) ;
+	std::string CutTail( std::string str, size_t cutSize ) ;
 	
 	std::vector<std::string> SplitTokens( std::string str ) ;
 	
@@ -45,7 +45,7 @@ std::string StringAdjuster::ClearWhite( std::string str ) {
 	
 	std::string retStr = "" ;
 	
-	for ( int i = 0 ; i < str.length() ; i++ ) {
+	for ( size_t i = 0 ; i < str.length() ; i++ ) {
 		if ( ! mCT->IsWhite( str[i] ) ) {
 			retStr += str[i] ;
 		} // if
@@ -57,7 +57,11 @@ std::string StringAdjuster::ClearWhite( std::string str ) {
 
 std::string StringAdjuster::ClearHeadTailWhite( std::string str ) {
 	
-	int hi = 0, ti = -1, i = 0 ;
+	if ( str.length() == 0 ) {
+		return str ;
+	} // if
+	
+	size_t hi = 0, ti = 0, i = 0 ;
 	std::string retStr = "" ;
 	
 	for ( i = 0 ; i < str.length() ; i++ ) {
@@ -67,14 +71,14 @@ std::string StringAdjuster::ClearHeadTailWhite( std::string str ) {
 		} // if
 	} // for
 	
-	for ( i = str.length() - 1 ; i >= 0 ; i-- ) {
-		if ( ! mCT->IsWhite( str[i] ) ) {
+	for ( i = str.length() ; i > 0 ; i-- ) {
+		if ( ! mCT->IsWhite( str[i - 1] ) ) {
 			ti = i ;
 			break ;
 		} // if
 	} // for
 	
-	for ( i = hi ; i <= ti ; i++ ) {
+	for ( i = hi ; i < ti ; i++ ) {
 		retStr += str[i] ;
 	} // for	
 	
@@ -82,11 +86,19 @@ std::string StringAdjuster::ClearHeadTailWhite( std::string str ) {
 	
 } // StringAdjuster::ClearHeadTailWhite()
 
-std::string StringAdjuster::CutHead( std::string str, unsigned int cutSize ) {
+std::string StringAdjuster::CutHead( std::string str, size_t cutSize ) {
+	
+	if ( cutSize <= 0 ) {
+		return str ;
+	} // if
+	
+	if ( cutSize > str.length() ) {
+		return "" ;
+	} // if
 	
 	std::string retStr = "" ;
 	
-	for ( int i = cutSize ; i < str.length() ; i++ ) {
+	for ( size_t i = cutSize ; i < str.length() ; i++ ) {
 		retStr += str[i] ;
 	} // for	
 	
@@ -94,11 +106,19 @@ std::string StringAdjuster::CutHead( std::string str, unsigned int cutSize ) {
 	
 } // StringAdjuster::CutHead()
 
-std::string StringAdjuster::CutTail( std::string str, unsigned int cutSize ) {
+std::string StringAdjuster::CutTail( std::string str, size_t cutSize ) {
+	
+	if ( cutSize <= 0 ) {
+		return str ;
+	} // if
+	
+	if ( cutSize > str.length() ) {
+		return "" ;
+	} // if
 	
 	std::string retStr = "" ;
 	
-	for ( int i = 0 ; i < str.length() - cutSize ; i++ ) {
+	for ( size_t i = 0 ; i < str.length() - cutSize ; i++ ) {
 		retStr += str[i] ;
 	} // for
 	
@@ -111,7 +131,7 @@ std::vector<std::string> StringAdjuster::SplitTokens( std::string str ) {
 	std::vector<std::string> retVec ;
 	std::string temp = "" ;
 	
-	for ( int i = 0 ; i < str.length() ; i++ ) {
+	for ( size_t i = 0 ; i < str.length() ; i++ ) {
 		
 		if ( mCT->IsWhite( str[i] ) ) {			
 			if ( temp != "" ) {
